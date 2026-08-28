@@ -43,7 +43,7 @@ provides=("arenapair=$pkgver")
 conflicts=('arenapair')
 options=('!debug' '!strip')
 
-_appimage="T3-Code-${pkgver}-x86_64.AppImage"
+_appimage="Arena-Pair-${pkgver}-x86_64.AppImage"
 source=(
   "$_appimage::https://github.com/pingdotgg/arenapair/releases/download/v${pkgver}/$_appimage"
   "${pkgname}-${pkgver}-LICENSE::https://raw.githubusercontent.com/pingdotgg/arenapair/v${pkgver}/LICENSE"
