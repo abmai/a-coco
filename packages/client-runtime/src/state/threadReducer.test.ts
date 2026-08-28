@@ -57,7 +57,7 @@ describe("applyThreadDetailEvent", () => {
         type: "project.created",
         payload: {
           projectId: ProjectId.make("project-1"),
-          title: "T3 Code",
+          title: "Arena Pair",
           workspaceRoot: "/repo",
           repositoryIdentity: null,
           defaultModelSelection: null,
@@ -309,9 +309,9 @@ describe("applyThreadDetailEvent", () => {
     it("sets and clears a linked pull request", () => {
       const linkedPullRequest = {
         projectId: ProjectId.make("project-1"),
-        repository: "pingdotgg/t3code",
+        repository: "pingdotgg/arenapair",
         number: 42,
-        url: "https://github.com/pingdotgg/t3code/pull/42",
+        url: "https://github.com/pingdotgg/arenapair/pull/42",
       };
       const linked = applyThreadDetailEvent(baseThread, {
         ...baseEventFields,

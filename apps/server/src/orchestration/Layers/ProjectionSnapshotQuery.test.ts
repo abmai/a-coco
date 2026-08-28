@@ -103,7 +103,7 @@ projectionSnapshotLayer("ProjectionSnapshotQuery", (it) => {
           'default',
           NULL,
           NULL,
-          '{"projectId":"project-1","repository":"pingdotgg/t3code","number":42,"url":"https://github.com/pingdotgg/t3code/pull/42"}',
+          '{"projectId":"project-1","repository":"pingdotgg/arenapair","number":42,"url":"https://github.com/pingdotgg/arenapair/pull/42"}',
           'turn-1',
           '2026-02-24T00:00:04.000Z',
           1,
@@ -308,9 +308,9 @@ projectionSnapshotLayer("ProjectionSnapshotQuery", (it) => {
           worktreePath: null,
           linkedPullRequest: {
             projectId: asProjectId("project-1"),
-            repository: "pingdotgg/t3code",
+            repository: "pingdotgg/arenapair",
             number: 42,
-            url: "https://github.com/pingdotgg/t3code/pull/42",
+            url: "https://github.com/pingdotgg/arenapair/pull/42",
           },
           latestTurn: {
             turnId: asTurnId("turn-1"),
@@ -434,9 +434,9 @@ projectionSnapshotLayer("ProjectionSnapshotQuery", (it) => {
           worktreePath: null,
           linkedPullRequest: {
             projectId: asProjectId("project-1"),
-            repository: "pingdotgg/t3code",
+            repository: "pingdotgg/arenapair",
             number: 42,
-            url: "https://github.com/pingdotgg/t3code/pull/42",
+            url: "https://github.com/pingdotgg/arenapair/pull/42",
           },
           latestTurn: {
             turnId: asTurnId("turn-1"),

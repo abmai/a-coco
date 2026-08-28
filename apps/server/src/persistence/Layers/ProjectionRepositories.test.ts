@@ -211,9 +211,9 @@ projectionRepositoriesLayer("Projection repositories", (it) => {
       const threads = yield* ProjectionThreadRepository;
       const linkedPullRequest = {
         projectId: ProjectId.make("project-linked-pr"),
-        repository: "pingdotgg/t3code",
+        repository: "pingdotgg/arenapair",
         number: 42,
-        url: "https://github.com/pingdotgg/t3code/pull/42",
+        url: "https://github.com/pingdotgg/arenapair/pull/42",
       };
 
       yield* threads.upsert({
