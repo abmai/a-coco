@@ -1,5 +1,10 @@
 # Brand icons
 
+> Recent change: The development app icon was replaced with `arena-icon.png` in the
+> repository root. The compiled development raster assets (`assets/dev/blueprint-*.png`,
+> `assets/dev/blueprint-*.ico`) and their `apps/web/public/*` copies were regenerated from
+> that file.
+
 The three Icon Composer projects are the source of truth for full application icons:
 
 - `dev/app-icon.icon`
