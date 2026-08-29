@@ -427,7 +427,7 @@ it.effect("accepts bootstrap metadata in thread.turn.start", () =>
         prepareWorktree: {
           projectCwd: "/tmp/workspace",
           baseBranch: "main",
-          branch: "t3code/example",
+          branch: "arenapair/example",
           startFromOrigin: true,
         },
         runSetupScript: true,
@@ -802,9 +802,9 @@ it.effect("accepts a linked pull request in thread.meta.update", () =>
   Effect.gen(function* () {
     const linkedPullRequest = {
       projectId: "project-1",
-      repository: "pingdotgg/t3code",
+      repository: "pingdotgg/arenapair",
       number: 42,
-      url: "https://github.com/pingdotgg/t3code/pull/42",
+      url: "https://github.com/pingdotgg/arenapair/pull/42",
     };
     const parsed = yield* decodeOrchestrationCommand({
       type: "thread.meta.update",

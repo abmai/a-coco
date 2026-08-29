@@ -17,7 +17,7 @@ import { makeClaudeTextGeneration } from "./ClaudeTextGeneration.ts";
 const decodeClaudeSettings = Schema.decodeSync(ClaudeSettings);
 
 const ClaudeTextGenerationTestLayer = ServerConfig.ServerConfig.layerTest(process.cwd(), {
-  prefix: "t3code-claude-text-generation-test-",
+  prefix: "arenapair-claude-text-generation-test-",
 }).pipe(Layer.provideMerge(NodeServices.layer));
 
 function makeFakeClaudeBinary(dir: string) {
@@ -117,7 +117,7 @@ function withFakeClaudeEnv<A, E, R>(
 ) {
   return Effect.gen(function* () {
     const fs = yield* FileSystem.FileSystem;
-    const tempDir = yield* fs.makeTempDirectoryScoped({ prefix: "t3code-claude-text-" });
+    const tempDir = yield* fs.makeTempDirectoryScoped({ prefix: "arenapair-claude-text-" });
     const binDir = yield* makeFakeClaudeBinary(tempDir);
     const pathDelimiter = (yield* isHostWindows) ? ";" : ":";
     const previousPath = process.env.PATH;
